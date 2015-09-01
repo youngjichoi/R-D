@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{B1B6D3B1-7E79-380D-88C2-8AF3A34FE93D}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_1_1;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ChatServer\ChatServer.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ChatServer\Handlers\ChatServerDeregisterEventHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ChatServer\Handlers\ChatServerRegisterEventHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ChatServer\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\CharacterCreate\CharacterCreate.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\CharacterCreate\CharacterCreateController.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\CharacterCreate\Handlers\CharacterCreateHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\CharacterCreate\Handlers\SelectCharacterHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\CharacterSelect\CharacterSelect.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\CharacterSelect\CharacterSelectController.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\CharacterSelect\Handlers\CharacterListHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\Login\Handlers\LoginHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\Login\Login.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\Login\LoginController.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\PhotonEngine\PhotonEngine.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\PhotonEngine\Scripts\Controllers\IViewController.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\PhotonEngine\Scripts\Controllers\ViewController.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\PhotonEngine\Scripts\GameStates\Connected.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\PhotonEngine\Scripts\GameStates\Disconnected.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\PhotonEngine\Scripts\GameStates\GameState.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\PhotonEngine\Scripts\GameStates\IGameState.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\PhotonEngine\Scripts\GameStates\WaitingForConnection.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\PhotonEngine\Scripts\Handlers\IPhotonEventHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\PhotonEngine\Scripts\Handlers\IPhotonOperationHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\PhotonEngine\Scripts\Handlers\PhotonEventHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\PhotonEngine\Scripts\Handlers\PhotonOperationHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\PhotonEngine\Scripts\Views\IView.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\Client\Assets\PhotonEngine\Scripts\Views\View.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServer\ComplexConnectionCollection.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServer\ComplexProxyServer.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServer\Handlers\EventForwardHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServer\Handlers\HandleClientLoginRequests.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServer\Handlers\HandleLoginResponse.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServer\Handlers\RequestForwardHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServer\Handlers\ResponseForwardHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServer\Handlers\SelectCharacterResponseHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServer\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServerCommon\ClientEventCode.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServerCommon\ClientOperationCode.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServerCommon\ClientParameterCode.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServerCommon\ClientReturnCode.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServerCommon\ErrorCode.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServerCommon\MessageObjects\CharacterCreateDetails.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServerCommon\MessageObjects\CharacterListItem.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServerCommon\MessageSubCode.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServerCommon\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\LoginServer\Handlers\ComplexServerLoginRequestHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\LoginServer\Handlers\ComplexServerRegisterRequestHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\LoginServer\Handlers\LoginServerCreateCharacterHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\LoginServer\Handlers\LoginServerListCharactersHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\LoginServer\Handlers\LoginServerSelectCharacterHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\LoginServer\Handlers\LoginServerUserLoggedOutHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\LoginServer\LoginServer.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\LoginServer\Operations\CreateCharacter.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\LoginServer\Operations\ListCharacters.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\LoginServer\Operations\LoginSecurely.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\LoginServer\Operations\RegisterSecurely.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\LoginServer\Operations\SelectCharacter.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\LoginServer\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\PluginServer\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\ClientData\CharacterData.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\ClientData\ChatPlayer.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\Data\Mapping\ComplexCharacterMap.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\Data\Mapping\UserMap.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\Data\Mapping\UserProfileMap.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\Data\NHibernate\ComplexCharacter.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\Data\NHibernate\User.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\Data\NHibernate\UserProfile.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\Data\RegisterSubServerData.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\Handlers\ErrorEventForwardHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\Handlers\ErrorRequestForwardHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\Handlers\ErrorResponseForwardHandler.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\Handlers\HandleServerRegistration.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\NHibernateHelper.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\Operations\RegisterSubServer.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\ServerEventCode.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\ServerOperationCode.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\ServerParameterCode.cs" />
+     <Compile Include="Assets\ComplexServer-master\ComplexServer-master\SubServerCommon\ServerType.cs" />
+     <Compile Include="Assets\PhotonEngine\_Scripts\PhotonEngine.cs" />
+     <Compile Include="Assets\PhotonEngine\_Scripts\_Controllers\IViewController.cs" />
+     <Compile Include="Assets\PhotonEngine\_Scripts\_Controllers\ViewController.cs" />
+     <Compile Include="Assets\PhotonEngine\_Scripts\_GameStates\Connected.cs" />
+     <Compile Include="Assets\PhotonEngine\_Scripts\_GameStates\Disconnected.cs" />
+     <Compile Include="Assets\PhotonEngine\_Scripts\_GameStates\GameState.cs" />
+     <Compile Include="Assets\PhotonEngine\_Scripts\_GameStates\IGameState.cs" />
+     <Compile Include="Assets\PhotonEngine\_Scripts\_GameStates\WaitingForConnection.cs" />
+     <Compile Include="Assets\PhotonEngine\_Scripts\_Handlers\IPhotonEventHandler.cs" />
+     <Compile Include="Assets\PhotonEngine\_Scripts\_Handlers\IPhotonOperationHandler.cs" />
+     <Compile Include="Assets\PhotonEngine\_Scripts\_Handlers\PhotonEventHandler.cs" />
+     <Compile Include="Assets\PhotonEngine\_Scripts\_Handlers\PhotonOperationHandler.cs" />
+     <Compile Include="Assets\PhotonEngine\_Scripts\_Views\IView.cs" />
+     <Compile Include="Assets\PhotonEngine\_Scripts\_Views\View.cs" />
+     <Compile Include="Assets\_Scripts\Login\Login.cs" />
+     <Compile Include="Assets\_Scripts\Login\LoginController.cs" />
+     <None Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServer\Autofac.xml" />
+     <None Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServer\ExitGamesLibs.xml" />
+     <None Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServer\ExitGames.Logging.Log4Net.xml" />
+     <None Include="Assets\ComplexServer-master\ComplexServer-master\ComplexServer\Photon.SocketServer.xml" />
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Autofac.Configuration">
+ <HintPath>C:/Users/user/Desktop/AegisBornPhoton-master/AegisBornPhoton-master/AegisBornClient/Assets/ComplexServer-master/ComplexServer-master/ComplexServer/Autofac.Configuration.dll</HintPath>
+ </Reference>
+ <Reference Include="Autofac">
+ <HintPath>C:/Users/user/Desktop/AegisBornPhoton-master/AegisBornPhoton-master/AegisBornClient/Assets/ComplexServer-master/ComplexServer-master/ComplexServer/Autofac.dll</HintPath>
+ </Reference>
+ <Reference Include="ComplexServer">
+ <HintPath>C:/Users/user/Desktop/AegisBornPhoton-master/AegisBornPhoton-master/AegisBornClient/Assets/ComplexServer-master/ComplexServer-master/ComplexServer/ComplexServer.dll</HintPath>
+ </Reference>
+ <Reference Include="ComplexServerCommon">
+ <HintPath>C:/Users/user/Desktop/AegisBornPhoton-master/AegisBornPhoton-master/AegisBornClient/Assets/ComplexServer-master/ComplexServer-master/ComplexServer/ComplexServerCommon.dll</HintPath>
+ </Reference>
+ <Reference Include="ExitGames.Logging.Log4Net">
+ <HintPath>C:/Users/user/Desktop/AegisBornPhoton-master/AegisBornPhoton-master/AegisBornClient/Assets/ComplexServer-master/ComplexServer-master/ComplexServer/ExitGames.Logging.Log4Net.dll</HintPath>
+ </Reference>
+ <Reference Include="ExitGamesLibs">
+ <HintPath>C:/Users/user/Desktop/AegisBornPhoton-master/AegisBornPhoton-master/AegisBornClient/Assets/ComplexServer-master/ComplexServer-master/ComplexServer/ExitGamesLibs.dll</HintPath>
+ </Reference>
+ <Reference Include="log4net">
+ <HintPath>C:/Users/user/Desktop/AegisBornPhoton-master/AegisBornPhoton-master/AegisBornClient/Assets/ComplexServer-master/ComplexServer-master/ComplexServer/log4net.dll</HintPath>
+ </Reference>
+ <Reference Include="MMO.Framework">
+ <HintPath>C:/Users/user/Desktop/AegisBornPhoton-master/AegisBornPhoton-master/AegisBornClient/Assets/ComplexServer-master/ComplexServer-master/ComplexServer/MMO.Framework.dll</HintPath>
+ </Reference>
+ <Reference Include="MMO.PhotonFramework">
+ <HintPath>C:/Users/user/Desktop/AegisBornPhoton-master/AegisBornPhoton-master/AegisBornClient/Assets/ComplexServer-master/ComplexServer-master/ComplexServer/MMO.PhotonFramework.dll</HintPath>
+ </Reference>
+ <Reference Include="Photon.SocketServer">
+ <HintPath>C:/Users/user/Desktop/AegisBornPhoton-master/AegisBornPhoton-master/AegisBornClient/Assets/ComplexServer-master/ComplexServer-master/ComplexServer/Photon.SocketServer.dll</HintPath>
+ </Reference>
+ <Reference Include="CJRGaming.MMO.Common">
+ <HintPath>C:/Users/user/Desktop/AegisBornPhoton-master/AegisBornPhoton-master/AegisBornClient/Assets/_Plugins/CJRGaming.MMO.Common.dll</HintPath>
+ </Reference>
+ <Reference Include="Photon3Unity3D">
+ <HintPath>C:/Users/user/Desktop/AegisBornPhoton-master/AegisBornPhoton-master/AegisBornClient/Assets/_Plugins/Photon3Unity3D.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
